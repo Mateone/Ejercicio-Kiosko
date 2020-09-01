@@ -4,8 +4,6 @@ namespace Expert_SRP
 {
     public class Alfajor
 
-    // La clase Alfajor cumple con el SRP ya que su unico motivo de cambiar es que
-    // cambien sus ingredientes o su valor. También debería implementar el metodo "PuedeComprar" porque es el experto en la información (patrón expert)
     {
         public Alfajor(double precioMasa, double precioDulce)
         {
