@@ -4,9 +4,6 @@ namespace SRP
 {
     public class Libro
     {
-        //El metodo "Libro" está bien asignado ya que la clase es la experta en la información,
-        //pero en mi opinión el metodo "AlmacenarLibro" debería ser responsabilidad de otra clase, para cumplir con el SRP, y a su vez cumplir con el expert.
-
         public string Titulo { get ; }
         public string Autor { get ; }
         public string Codigo { get ;  }
@@ -18,12 +15,6 @@ namespace SRP
             this.Titulo = titulo;
             this.Autor = autor;
             this.Codigo = codigo;
-        }
-
-        public void AlmacenarLibro(String sector, String estante)
-        {
-            this.SectorBiblioteca = sector;
-            this.EstanteBiblioteca = estante;
         }
 
     }
