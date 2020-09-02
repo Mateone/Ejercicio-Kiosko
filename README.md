@@ -6,4 +6,5 @@
 
 ### Expert y SRP
 
-Ejercicios de aplicación de Expert y SRP
+Las branches "Ejercicio1" y "Ejercicio2" pertenecen a las dos partes del Ejercicio1
+Las branches "Ejercicio3" y "Ejercicio4" pertenecen a las dos partes del Ejercicio2
