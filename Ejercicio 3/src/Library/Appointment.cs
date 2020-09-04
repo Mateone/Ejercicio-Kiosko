@@ -1,4 +1,5 @@
 using System;
+using System.Text;
 
 namespace Library
 {
@@ -17,7 +18,6 @@ namespace Library
                     this.place = value;
             }
         }
-        private Datetime date;
         public DateTime Date{get; set;}
         private Person person;
         public Person Person{get; set;}
