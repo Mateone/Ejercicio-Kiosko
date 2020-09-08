@@ -1,4 +1,6 @@
 using System;
+using System.Text;
+using System.Threading;
 
 namespace Library
 {
@@ -28,9 +30,7 @@ namespace Library
                     s.Append("\n");
                 }
                 Console.WriteLine(s.ToString());
-                //=================================================
-                //Invocar método para calcular siguiente generación
-                //=================================================
+                board.GameLogic(b);
                 Thread.Sleep(300);
             }
          }

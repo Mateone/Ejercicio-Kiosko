@@ -2,9 +2,8 @@ using System;
 
 namespace GameOfLife
 {
-    public class Board
+    public abstract class Board
     {
-
         public bool[,] GameLogic(bool[,] gameBoard)
         {
             int boardWidth = gameBoard.GetLength(0);
@@ -50,11 +49,11 @@ namespace GameOfLife
                         //Celula mantiene el estado que tenía
                         cloneboard[x,y] = gameBoard[x,y];
                     }
+                }
             }
-        }
-        gameBoard = cloneboard;
-        cloneboard = new bool[boardWidth, boardHeight];
-        return cloneboard;
+            gameBoard = cloneboard;
+            cloneboard = new bool[boardWidth, boardHeight];
+            return cloneboard;
         }
     }
 }
