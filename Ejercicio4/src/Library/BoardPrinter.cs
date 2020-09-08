@@ -8,6 +8,7 @@ namespace GameOfLife
     {
         public int width; //variabe que representa el ancho del tablero
         public int height; //variabe que representa altura del tablero
+        Board board = new Board();
         public string PrintBoard(bool[,] b)
         {
             while (true)
@@ -30,7 +31,6 @@ namespace GameOfLife
                     s.Append("\n");
                 }
                 Console.WriteLine(s.ToString());
-                Board board = new Board();
                 board.GameLogic(b);
                 Thread.Sleep(300);
             }
