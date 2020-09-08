@@ -2,7 +2,7 @@ using System;
 using System.Text;
 using System.Threading;
 
-namespace Library
+namespace GameOfLife
 {
     public class BoardPrinter
     {
@@ -30,6 +30,7 @@ namespace Library
                     s.Append("\n");
                 }
                 Console.WriteLine(s.ToString());
+                Board board = new Board();
                 board.GameLogic(b);
                 Thread.Sleep(300);
             }

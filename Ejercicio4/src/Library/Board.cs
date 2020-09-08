@@ -2,7 +2,7 @@ using System;
 
 namespace GameOfLife
 {
-    public abstract class Board
+    public class Board
     {
         public bool[,] GameLogic(bool[,] gameBoard)
         {
